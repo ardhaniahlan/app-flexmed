@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_chat"
+    app:startDestination="@id/homeChatFragment">
+    <fragment
+        android:id="@+id/homeChatFragment"
+        android:name="org.apps.flexmed.ui.chat.HomeChatFragment"
+        android:label="fragment_home_chat"
+        tools:layout="@layout/fragment_home_chat" >
+        <action
+            android:id="@+id/action_homeChatFragment_to_messageFragment"
+            app:destination="@id/messageFragment">
+            <argument
+                android:name="chatRoomId"
+                app:argType="string" />
+            <argument
+                android:name="user"
+                app:argType="org.apps.flexmed.model.User" />
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="org.apps.flexmed.ui.chat.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/action_messageFragment_to_homeChatFragment"
+            app:destination="@id/homeChatFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "976111037143",
+    "project_id": "flexmed-1aa9e",
+    "storage_bucket": "flexmed-1aa9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976111037143:android:a30ab3e26ff3ce4764de92",
+        "android_client_info": {
+          "package_name": "org.apps.flexmed"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOTGLF1_xczisPVoqGZxap33i8VDLM5wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
